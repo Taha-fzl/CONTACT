@@ -27,7 +27,7 @@ jobs:
         run: ./gradlew assembleDebug
 
       - name: Upload APK
-        uses: actions/upload-artifact@v2   # ← نسخه رو از v3 به v2 تغییر بده
+        uses: actions/upload-artifact@v2.3.1
         with:
           name: ContactSender-APK
           path: app/build/outputs/apk/debug/app-debug.apk
